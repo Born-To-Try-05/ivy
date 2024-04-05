@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>IVY moda</title>
+        <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+        <script src="https://kit.fontawesome.com/18ea624bf8.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+    <body>
+        <header id="header">
+            <div class="container">
+                <ul class="nav">
+                    <li><a href="#">NỮ</a></li>
+                    <li><a href="#">NAM</a></li>
+                    <li><a href="#">TRẺ EM</a></li>
+                    <li><a href="#" style="color: #ff0000">BIG SALE THÁNG 3</a></li>
+                    <li><a href="#">BỘ SƯU TẬP</a></li>
+                    <li><a href="#">VỀ CHÚNG TÔI</a></li>
+                </ul>
+                <div class="logo">
+                    <a href="#"><img src="./images/logo.png" alt="" /></a>
+                </div>
+                <div class="right-header">
+                    <form action="" class="search-form">
+                        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                        <input type="text" placeholder="TÌM KIẾM SẢN PHẨM" />
+                    </form>
+
+                    <div class="header-action">
+                        <div class="item"><i class="fa-solid fa-headphones"></i></div>
+                        <div class="item"><i class="fa-regular fa-user"></i></div>
+                        <div class="item" id="open" onClick="openShop()">
+                            <i class="fa-brands fa-shopify"></i><span class="number-cart">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main id="main">
+            <div class="container">
+                <div class="nav">
+                    <div class="nav-info left-nav">
+                        <a href="#"><span>SALE all 50% + thêm 10% HĐ từ 2 SP</span></a>
+                    </div>
+                    <div class="nav-info center-nav">
+                        <a href="#"><span>SALE UPTO 75% </span></a>
+                    </div>
+                    <div class="nav-info right-nav">
+                        <a href="#"><span>NEW ARRIVAL + giảm 10% HĐ từ 2 SP</span></a>
+                    </div>
+                </div>
+
+                <section id="banner">
+                    <div class="pseudo">
+                        <div class="wrapper">
+                            <i class="fa-solid fa-arrow-left-long arrow-left" onClick="prev()"></i>
+
+                            <img id="slide-img" src="./images/banner2.jpg" alt="" />
+
+                            <i class="fa-solid fa-arrow-right-long arrow-right" onClick="next()"></i>
+
+                            <div id="list-dot">
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="product">
+                    <div class="title-section">NEW ARRIVAL</div>
+                    <div class="wrap">
+                        <div class="head">
+                            <ul>
+                                <li class="tab active">IVY moda</li>
+                                <li class="tab">IVY men</li>
+                                <li class="tab">IVY kids</li>
+                            </ul>
+                        </div>
+                        <div class="content">
+                            <div class="box">
+                                <div class="cart">NEW</div>
+                                <img src="./images/img1.jfif" alt="" />
+
+                                <div class="detail">
+                                    <div class="detail-head">
+                                        <div class="list-color">
+                                            <div class="color color-c5a782"></div>
+                                            <div class="color color-a3784e"></div>
+                                            <div class="color color-ec6795 checked"></div>
+                                        </div>
+                                        <div class="heart">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                    </div>
+
+                                    <div class="detail-desp">Lantana Dress - Đầm xòe phối đai</div>
+
+                                    <div class="detail-foot">
+                                        <div class="price"><span>2.000.000đ</span> <del>3.000.000đ</del></div>
+                                        <div
+                                            class="add-to-cart"
+                                            onClick="addPro({name: 'Lantana Dress - Đầm Xòe Phối Đai', price: 2000000, img: './images/img1.jfif'})"
+                                        >
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="cart">NEW</div>
+                                <img src="./images/img2.jfif" alt="" />
+
+                                <div class="detail">
+                                    <div class="detail-head">
+                                        <div class="list-color">
+                                            <div class="color color-c5a782"></div>
+                                            <div class="color color-a3784e"></div>
+                                            <div class="color color-ec6795 checked"></div>
+                                        </div>
+                                        <div class="heart">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                    </div>
+
+                                    <div class="detail-desp">Áo sơ mi PEPLUM cổ đức</div>
+
+                                    <div class="detail-foot">
+                                        <div class="price"><span>850.000đ</span> <del>3.000.000đ</del></div>
+                                        <div
+                                            class="add-to-cart"
+                                            onClick="addPro({name: 'Áo Sơ Mi PEPLUM Cổ Đức', price: 850000, img: './images/img2.jfif'})"
+                                        >
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="cart">NEW</div>
+                                <img src="./images/img3.jpg" alt="" />
+
+                                <div class="detail">
+                                    <div class="detail-head">
+                                        <div class="list-color">
+                                            <div class="color color-c5a782"></div>
+                                            <div class="color color-a3784e"></div>
+                                            <div class="color color-ec6795 checked"></div>
+                                        </div>
+                                        <div class="heart">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                    </div>
+
+                                    <div class="detail-desp">Áo Blazer Dahlia Set</div>
+
+                                    <div class="detail-foot">
+                                        <div class="price"><span>1.500.000đ</span> <del>3.000.000đ</del></div>
+                                        <div
+                                            class="add-to-cart"
+                                            onClick="addPro({name: 'Áo Blazer Dahlia Set', price: 1500000, img: './images/img3.jpg'})"
+                                        >
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="cart">NEW</div>
+                                <img src="./images/img4.jfif" alt="" />
+
+                                <div class="detail">
+                                    <div class="detail-head">
+                                        <div class="list-color">
+                                            <div class="color color-c5a782"></div>
+                                            <div class="color color-a3784e"></div>
+                                            <div class="color color-ec6795 checked"></div>
+                                        </div>
+                                        <div class="heart">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                    </div>
+
+                                    <div class="detail-desp">Áo kiểu Youthful Set</div>
+
+                                    <div class="detail-foot">
+                                        <div class="price">
+                                            <span>500.000đ</span>
+                                            <del>3.000.000đ</del>
+                                        </div>
+
+                                        <div
+                                            class="add-to-cart"
+                                            onClick="addPro({name: 'Áo Kiểu Youthful Set', price: 500000, img: './images/img4.jfif'})"
+                                        >
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="cart">NEW</div>
+                                <img src="./images/img5.jpg" alt="" />
+
+                                <div class="detail">
+                                    <div class="detail-head">
+                                        <div class="list-color">
+                                            <div class="color color-c5a782"></div>
+                                            <div class="color color-a3784e"></div>
+                                            <div class="color color-ec6795 checked"></div>
+                                        </div>
+                                        <div class="heart">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                    </div>
+
+                                    <div class="detail-desp">Cosmos Set - Áo công sở peplum và chân váy xòe</div>
+
+                                    <div class="detail-foot">
+                                        <div class="price"><span>600.000đ</span> <del>3.000.000đ</del></div>
+                                        <div
+                                            class="add-to-cart"
+                                            onClick="addPro({name: 'Cosmos Set - Áo Công Sở Peplum Và Chân Váy Xòe', price: 600000, img: './images/img5.jpg'})"
+                                        >
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="show-all">
+                            <div class="show-text">Xem tất cả</div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="shopping" id="shopping">
+                <div class="top-shop">
+                    <h3>Giỏ hàng<span class="number-cart">0</span></h3>
+                </div>
+                <div class="main-shop" id="main-shop"></div>
+                <div class="bottom-shop">
+                    <div class="total-price">Tổng cộng: <strong id="total">0đ</strong></div>
+                    <div class="box-action">
+                        <div class="box-title">Thanh toán</div>
+                    </div>
+                </div>
+                <div class="close-shop" id="close" onClick="closeShop()"><i class="fa-solid fa-xmark"></i></div>
+            </div>
+        </main>
+
+        <div id="bottom">
+            <div class="container">
+                <div class="left-bottom">
+                    <div class="top-left">
+                        <div>
+                            <img src="./images/logo-footer.png" alt="" />
+                        </div>
+                        <div>
+                            <img src="./images/protected.png" alt="" />
+                        </div>
+                        <div>
+                            <img src="./images/img-congthuong.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="left-info">
+                        <p>Công ty Cổ phần Dự Kim với số đăng ký kinh doanh: 0105777650</p>
+                        <p>
+                            <strong>Địa chỉ đăng ký: </strong>Tổ dân phố Tháp, P.Đại Mỗ, Q.Nam Từ Liêm, TP.Hà Nội, Việt
+                            Nam
+                        </p>
+                        <p><strong>Số điện thoại: </strong>0243 205 2222/ 090 589 8683</p>
+                        <p><strong>Email: </strong> cskh@ivy.com.vn</p>
+                    </div>
+                    <ul class="list-social">
+                        <li><img src="./images/fb.svg" alt="" /></li>
+                        <li><img src="./images/gg.svg" alt="" /></li>
+                        <li>
+                            <img src="./images/instagram.svg" alt="" style="height: 30px" />
+                        </li>
+                        <li>
+                            <img src="./images/pinterest.svg" alt="" style="height: 27px" />
+                        </li>
+                        <li><img src="./images/ytb.svg" alt="" /></li>
+                    </ul>
+                    <div class="hotline">Hotline: 0246 662 3434</div>
+                </div>
+                <div class="center-bottom">
+                    <div class="left-center">
+                        <p class="title">Giới thiệu</p>
+                        <ul>
+                            <li><a href="#">Về IVY moda</a></li>
+                            <li><a href="#">Tuyển dụng</a></li>
+                            <li><a href="#">Hệ thống cửa hàng</a></li>
+                        </ul>
+                    </div>
+                    <div class="mid-center">
+                        <p class="title">Dịch vụ khách hàng</p>
+                        <ul>
+                            <li><a href="#">Chính sách điều khoản</a></li>
+                            <li><a href="#">Hướng dẫn mua hàng</a></li>
+                            <li><a href="#">Chính sách thanh toán</a></li>
+                            <li><a href="#">Chính sách đổi trả</a></li>
+                            <li><a href="#">Chính sách bảo hành</a></li>
+                            <li><a href="#">Chính sách giao nhận vận chuyển</a></li>
+                            <li><a href="#">Chính sách thẻ thành viên</a></li>
+                            <li><a href="#">Hệ thống cửa hàng</a></li>
+                            <li><a href="#">Q&A</a></li>
+                        </ul>
+                    </div>
+                    <div class="right-center">
+                        <p class="title">Liên hệ</p>
+                        <ul>
+                            <li><a href="#">Hotline</a></li>
+                            <li><a href="#">Email</a></li>
+                            <li><a href="#">Live Chat</a></li>
+                            <li><a href="#">Messenger</a></li>
+                            <li><a href="#">Liên hệ</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="right-bottom">
+                    <div class="register-form">
+                        <div class="register-title">Nhận thông tin các chương trình của IVY moda</div>
+                        <form action="" id="form-subscribe">
+                            <input type="text" placeholder="Nhập địa chỉ email" class="email-subscribe" />
+                            <button class="btn-submit">Đăng ký</button>
+                        </form>
+                    </div>
+                    <div class="app">
+                        <div class="app-title">Download App</div>
+                        <img src="./images/appstore.png" alt="" />
+                        <img src="./images/googleplay.png" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer id="footer">
+            <div class="copy-right">©IVYmoda All rights reserved</div>
+        </footer>
+
+        <script src="./app.js"></script>
+    </body>
+</html>
