@@ -261,3 +261,15 @@ const makeCountPro = () => {
     let result = arrPro.reduce((count, item) => count + item.quantity, 0);
     listNumberCart[0].innerText = listNumberCart[1].innerText = result;
 };
+
+// heart
+const listHeart = document.getElementsByClassName("fa-heart");
+
+for (let i = 0; i < listHeart.length; i++) {
+    listHeart[i].addEventListener("click", () => changeHeart(i));
+}
+
+function changeHeart(index) {
+    listHeart[index].classList.toggle("fa-regular");
+    listHeart[index].classList.toggle("fa-solid");
+}
